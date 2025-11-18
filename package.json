@@ -1,0 +1,28 @@
+{
+  "name": "electron-react-vite-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "pnpm --ignore-workspace-root-check",
+    "dev": "concurrently \"pnpm dev:react\" \"pnpm dev:electron\"",
+    "dev:react": "cd frontend && pnpm dev",
+    "dev:electron": "cd electron && pnpm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "@tata-v/eslint-config-react-base": "^1.0.11",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "typescript-eslint": "^8.47.0"
+  }
+}

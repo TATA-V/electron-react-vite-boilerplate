@@ -1,0 +1,14 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "electron-app",
+  "main": "index.js",
+  "scripts": {
+    "app": "pnpm --ignore-workspace-root-check",
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "devDependencies": {
+    "electron": "^39.2.1"
+  }
+}
