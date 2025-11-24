@@ -16,8 +16,12 @@ app.whenReady().then(() => {
   });
 
   mainWindow.loadURL('http://localhost:5173');
-  
-  mainWindow.on('close', () => {
+
+  mainWindow.on('closed', () => {
     mainWindow = null;
   });
+});
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit();
 });
