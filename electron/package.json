@@ -9,6 +9,6 @@
     "dev": "electron . --dev"
   },
   "devDependencies": {
-    "electron": "^39.2.1"
+    "electron": "^39.2.6"
   }
 }
